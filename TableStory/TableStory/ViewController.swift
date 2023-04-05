@@ -10,11 +10,11 @@ import MapKit
 
 
 let data = [
-    Item(name: "Pepe's Tacos", neighborhood: "Downtown", desc: "This food truck offers delicious birria tacos served with a warm consomme.", lat: 30.273320, long: -97.753550, imageName: "rest1"),
-    Item(name: "Biscuits + Groovy", neighborhood: "Hyde Park", desc: "Groovy little neighborhood truck serving up biscuits in a variety of styles.", lat: 30.313960, long: -97.719760, imageName: "rest2"),
-    Item(name: "Veracruz All Natural", neighborhood: "Mueller", desc: "This is one of many locations for the beloved taco mavens of Austin.", lat: 30.2962244, long: -97.7079799, imageName: "rest3"),
-    Item(name: "Vaquero Taquero", neighborhood: "UT", desc: "Delicious tacos with a convenient walk up window. ", lat: 30.295190, long: -97.736540, imageName: "rest4"),
-    Item(name: "Uncle Nicky's", neighborhood: "Hyde Park", desc: "Serving up Italian specialties and drinks.", lat: 30.304890, long: -97.726220, imageName: "rest5")
+    Item(name: "LBJ Student Center", neighborhood: "Downtown", desc: "The hub of activity on campus. LBJ Student Center is the perfect place for students to attend classes or club meetings, hangout, and grab a bite to eat. The University Bookstore is also located here.", lat: 29.88957777575879, long: -97.94450469092354, imageName: "rest1"),
+    Item(name: "Albert B. Alkek Library", neighborhood: "Hyde Park", desc: "The main central library at Texas State. Alkek provides students access to computers, scanners, printers, and study rooms.", lat: 29.88904555758779, long: -97.94308370591796, imageName: "rest2"),
+    Item(name: "Harris Dining Hall", neighborhood: "Mueller", desc: "A great place to stop by before0 or after working out at the recreation center, as it's right next door. Harris Dining Hall has a variety of food to choose from, breakfast included. ", lat: 29.888005015112544, long: -97.95163807632622, imageName: "rest3"),
+    Item(name: "Student Recreation Center", neighborhood: "UT", desc: "With amentities like badminton, cardio machines, dance studios, and basketball the Student Recreation Center is a good place for students to get their blood pumping. Equipment can also be checked out here with proof of student i.d.", lat: 29.888878124751166, long: -97.95055097585275, imageName: "rest4"),
+    Item(name: "Student Health Center", neighborhood: "Hyde Park", desc: "Student's one-stop healthcare clinic on campus. If students are ever feeling sick or in need of a check-up or medication, the Student Health Center will be fastest and most convenient.", lat: 29.890828467104114, long: -97.94616757346425, imageName: "rest5")
    
 ]
 
@@ -76,8 +76,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         
         //set center, zoom level and region of the map
-                let coordinate = CLLocationCoordinate2D(latitude: 30.295190, longitude: -97.7444)
-                let region = MKCoordinateRegion(center: coordinate,span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1))
+                let coordinate = CLLocationCoordinate2D(latitude: 29.88904555758779, longitude: -97.94308370591796)
+                let region = MKCoordinateRegion(center: coordinate,span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
                 mapView.setRegion(region, animated: true)
                 
              // loop through the items in the dataset and place them on the map
